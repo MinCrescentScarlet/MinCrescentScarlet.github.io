@@ -45,7 +45,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="https://smms.app/image/QPLa9oK4RNzBTkW" class="js-avatar">
+			<img src="https://s2.loli.net/2022/09/01/QPLa9oK4RNzBTkW.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/"></a></h1>
@@ -105,7 +105,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="https://smms.app/image/QPLa9oK4RNzBTkW" class="js-avatar">
+				<img src="https://s2.loli.net/2022/09/01/QPLa9oK4RNzBTkW.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author"></h1>
@@ -157,6 +157,113 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-22-9-1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/09/01/22-9-1/">错题与知识点记录#1</a>
+    </h1>
+  
+
+        
+        <a href="/2022/09/01/22-9-1/" class="archive-article-date">
+  	<time datetime="2022-09-01T08:31:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-09-01</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="错题与知识点记录-1"><a href="#错题与知识点记录-1" class="headerlink" title="错题与知识点记录#1"></a>错题与知识点记录#1</h1><blockquote>
+<p>在牛客网上试着做了些题目，发现过长时间的生疏让很多知识都变得模糊不清，尽管题目质量不佳，这里还是记录一下一些错题来警示自己并加深印象</p>
+</blockquote>
+<hr>
+<p>&amp;emsp;&amp;emsp;阅读如下代码。 请问，对语句行 test.hello(). 描述正确的有( )</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> NowCoder;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Test</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">hello</span><span class="params">()</span> &#123;</span><br><span class="line">	    System.out.println(<span class="string">&quot;hello&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyApplication</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">		<span class="comment">// TODO Auto-generated method stub</span></span><br><span class="line">		Test test=<span class="literal">null</span>;</span><br><span class="line">		test.hello();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>A.能编译通过，并正确运行</li>
+<li>B.因为使用了未初始化的变量，所以不能编译通过</li>
+<li>C.以错误的方式访问了静态方法</li>
+<li>D.能编译通过，但因变量为null，不能正常运行</li>
+</ul>
+<p align="right">--此题错选了C。正解为A</p>
+
+<p>&amp;emsp; 因为Test类的hello方法是静态的，所以是属于类的，<em><strong>当实例化该类的时候，静态会被优先加载而且只加载一次，所以不受实例化<code>new Test();</code>影响</strong></em>，只要是使用到了Test类，都会加载静态hello方法！ </p>
+<p>&amp;emsp;另外，在其他类的静态方法中也是可以调用公开的静态方法，此题hello方法是使用public修饰的所以在MyApplication中调用hello也是可以的。</p>
+<p>&amp;emsp;总结：即使 <code>Test test=null;</code> 这里也会加载静态方法，所以test数据中包含Test类的初始化数据。（静态的，构造的，成员属性）</p>
+<hr>
+<p>&amp;emsp;以下哪些方法是Object类中的方法:</p>
+<ul>
+<li>A.clone()</li>
+<li>B.toString()</li>
+<li>C.wait()</li>
+<li>D.finalize()</li>
+</ul>
+<p align="right">--此题正解为A、B、C、D。</p>
+
+<p>&amp;emsp; 如图所示：</p>
+<p><img src="/2022/09/01/22-9-1/Object.png" alt="img"></p>
+<hr>
+<h3 id="参考文献："><a href="#参考文献：" class="headerlink" title="参考文献："></a>参考文献：</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://www.nowcoder.com/questionTerminal/733630b017f74bf3bcf54dc8a82dc3cf">https://www.nowcoder.com/questionTerminal/733630b017f74bf3bcf54dc8a82dc3cf</a></li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">随笔 技术</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022/09/01/22-9-1/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-重拾HEXO" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -421,6 +528,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">随笔 技术</a>
+              </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">技术</a>
