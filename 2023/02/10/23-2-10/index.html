@@ -1,0 +1,177 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>校企实训项目：电影推荐系统 日记#1 | - Avalon -</title><meta name="keywords" content="Python"><meta name="author" content="クリムゾンSCARLET"><meta name="copyright" content="クリムゾンSCARLET"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="校企实训项目开发日记#1 写在前面的项目背景：    写在自己的博客上面首先肯定是要发发牢骚。先从项目说起，所谓学校的校企合作项目，也就是把人关在机房里面每天点到，这样弄上一个月，还会和已有的课程以及期末考试冲突，本来笔者的专业课程安排就出现了问题，导致需要我们这个学期每个人都去插班学弟学妹的课程，我还选了课程时长最长的专业英语，这个实训可以说是在学期末几乎是毫无进展，题目都没有选，最后拖到了疫情">
+<meta property="og:type" content="article">
+<meta property="og:title" content="校企实训项目：电影推荐系统 日记#1">
+<meta property="og:url" content="https://mincrescentscarlet.github.io/2023/02/10/23-2-10/index.html">
+<meta property="og:site_name" content="- Avalon -">
+<meta property="og:description" content="校企实训项目开发日记#1 写在前面的项目背景：    写在自己的博客上面首先肯定是要发发牢骚。先从项目说起，所谓学校的校企合作项目，也就是把人关在机房里面每天点到，这样弄上一个月，还会和已有的课程以及期末考试冲突，本来笔者的专业课程安排就出现了问题，导致需要我们这个学期每个人都去插班学弟学妹的课程，我还选了课程时长最长的专业英语，这个实训可以说是在学期末几乎是毫无进展，题目都没有选，最后拖到了疫情">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2023/02/11/iS2XYUKTNAkERzL.jpg">
+<meta property="article:published_time" content="2023-02-10T15:28:47.000Z">
+<meta property="article:modified_time" content="2023-02-10T16:30:38.188Z">
+<meta property="article:author" content="クリムゾンSCARLET">
+<meta property="article:tag" content="Python">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2023/02/11/iS2XYUKTNAkERzL.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://mincrescentscarlet.github.io/2023/02/10/23-2-10/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '校企实训项目：电影推荐系统 日记#1',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-02-11 00:30:38'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://s2.loli.net/2022/09/01/QPLa9oK4RNzBTkW.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 所有文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://s2.loli.net/2023/02/11/iS2XYUKTNAkERzL.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">- Avalon -</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 所有文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">校企实训项目：电影推荐系统 日记#1</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-02-10T15:28:47.000Z" title="发表于 2023-02-10 23:28:47">2023-02-10</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-02-10T16:30:38.188Z" title="更新于 2023-02-11 00:30:38">2023-02-11</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%BC%80%E5%8F%91%E6%97%A5%E8%AE%B0/">开发日记</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="校企实训项目：电影推荐系统 日记#1"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="校企实训项目开发日记-1"><a href="#校企实训项目开发日记-1" class="headerlink" title="校企实训项目开发日记#1"></a>校企实训项目开发日记#1</h1><hr>
+<p><strong>写在前面的项目背景：</strong></p>
+<blockquote>
+<p>  写在自己的博客上面首先肯定是要发发牢骚。先从项目说起，所谓学校的校企合作项目，也就是把人关在机房里面每天点到，这样弄上一个月，还会和已有的课程以及期末考试冲突，本来笔者的专业课程安排就出现了问题，导致需要我们这个学期每个人都去插班学弟学妹的课程，我还选了课程时长最长的专业英语，这个实训可以说是在学期末几乎是毫无进展，题目都没有选，最后拖到了疫情严重不得不赶学生回去，这才得以缓过来。<br>但是祸不单行，笔者的身体状况愈下，10月1月经历了两次内镜手术都没有好转，而在年前又中招新冠，医生说病情没有办法了，只能做外科手术动个大刀才能缓解，这样势必赶不上开学，而开学时这个实训也要交，老师不给任何回旋的余地。迫于无奈，必须在这几天住院部床位爆满的空档期完成实训项目并写完日记和报告，于是便有了这次不求甚解的项目rush。</p>
+</blockquote>
+<h3 id="关于选题："><a href="#关于选题：" class="headerlink" title="关于选题："></a>关于选题：</h3><p>由于期末毕设的选题相当仓促，选择了推荐系统的设计与实现，但由于笔者事先也并未了解过相关内容，便打算这次实训项目也做一个经典的电影推荐系统，先去找实战或者开源代码跑起来，在根据剩余的时间去加以理解与消化，哪怕技术稍微落后一点，也是为未来毕设的实现做好铺垫。</p>
+<p>在GitHub上查阅推荐系统相关的项目，发现了一个电影推荐系统，便准备克隆下来试试，链接如下：</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://github.com/JaniceWuo/MovieRecommend">https://github.com/JaniceWuo/MovieRecommend</a></p>
+</blockquote>
+<p>项目的详情也请移步到GitHub上查阅ReadMe文件。</p>
+<h3 id="工作内容："><a href="#工作内容：" class="headerlink" title="工作内容："></a>工作内容：</h3><h4 id="1-准备环境："><a href="#1-准备环境：" class="headerlink" title="1.准备环境："></a>1.准备环境：</h4><p>通过阅读readme可知，需要准备的依赖有三：</p>
+<ul>
+<li>Python3.6+django1.11 (python3.5亦可)</li>
+<li>MySQL5.6</li>
+<li>Jquery+CSS3+Html5</li>
+</ul>
+<p>在PyCharm中打开项目文件夹，pip install Django&#x3D;&#x3D;1.11和pymysql即可。<br>需要注意的是，Python和Django的版本不能有误，高版本对代码内容有优化，会使得代码报错。<br>这也让笔者的Python环境管理狠狠的喝上了一壶。</p>
+<h3 id="2-数据库与数据集："><a href="#2-数据库与数据集：" class="headerlink" title="2.数据库与数据集："></a>2.数据库与数据集：</h3><p>1.新建database名为<code>MovieData</code><br>2.在该数据库中新建表<code>moviegenre3</code>，注意，不要按照ReadMe文件提升提前创建<code>users_resulttable</code>表，那会使得后续py文件代码报“此表已存在”的异常。<br>3.在项目的data目录下有两个csv文件，按照readme文件的指示使用Navicat工具导入，尚未创建的表可以在后续步骤中导入，此步骤也可以稍后进行。</p>
+<p>不要忘了修改数据库相关代码以符合实际情况，如修改端口号，用户名以及密码。涉及到的文件有<code>setting.py</code>与<code>view.py</code></p>
+<p><strong>一些问题：</strong></p>
+<blockquote>
+<p>1.导入moviegenre3.csv的时候出现了问题，发现原数据集有些缺陷，首先是ANSI编码，笔者比较笨，并没有在Navicat的导入设置中找到对应的编码，转成UTF-8则会使得一些电影名称乱码。<br>2.其次是数据集本身有重复项和缺省值，主键的重复项在直接导入时会导致Error。<br>3.再者是在每一行数据的末端，都有两个多余的逗号分隔符。<br>一半以上的数据在insert的时候都出现了Error异常，初步怀疑是上述问题导致，数据集可能有待使用ETL工具预处理与清洗。笔者先简单的加上了表头，清洗留到明天使用kettle进行。</p>
+</blockquote>
+<h3 id="3-启动项目与测试："><a href="#3-启动项目与测试：" class="headerlink" title="3.启动项目与测试："></a>3.启动项目与测试：</h3><p>在PyCarm的控制台输入：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">python manage.py makemigrations</span><br><span class="line">python manage.py migrate</span><br><span class="line">python manage.py runserver</span><br></pre></td></tr></table></figure>
+
+<p>至此若无报错，可以在 <a target="_blank" rel="noopener" href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a> 看到主界面。<br>经过测试，账号注册与登录功能正常，但是在提交评分之后进行推荐，则始终推荐出空list的结果，初步怀疑是前文提到的数据集问题，因为Error导致丢失的电影名称太多，使得另一个表中的电影id找不到对应的电影及其海报，有待后续清洗数据集后再次测试进行排查。</p>
+<hr>
+<h3 id="项目原文："><a href="#项目原文：" class="headerlink" title="项目原文："></a>项目原文：</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/JaniceWuo/MovieRecommend">https://github.com/JaniceWuo/MovieRecommend</a></li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://MinCrescentScarlet.github.io">クリムゾンSCARLET</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://mincrescentscarlet.github.io/2023/02/10/23-2-10/">https://mincrescentscarlet.github.io/2023/02/10/23-2-10/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://MinCrescentScarlet.github.io" target="_blank">- Avalon -</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Python/">Python</a></div><div class="post_share"><div class="social-share" data-image="https://s2.loli.net/2023/02/11/iS2XYUKTNAkERzL.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2022/09/06/22-9-6/"><img class="next-cover" src="https://s2.loli.net/2022/09/01/EGDF4ywUoLS7I5a.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">错题与知识点记录#2:求序列和</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://s2.loli.net/2022/09/01/QPLa9oK4RNzBTkW.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">クリムゾンSCARLET</div><div class="author-info__description">一个可以被称作阿红的普通人</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/MinCrescentScarlet"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/MinCrescentScarlet" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:mincrescents@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://twitter.com/min_crescent" target="_blank" title="Twitter"><i class="fa-brands fa-twitter"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">博客还在更新维护中...对尚未实现的功能深表歉意</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%A0%A1%E4%BC%81%E5%AE%9E%E8%AE%AD%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E6%97%A5%E8%AE%B0-1"><span class="toc-number">1.</span> <span class="toc-text">校企实训项目开发日记#1</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E9%80%89%E9%A2%98%EF%BC%9A"><span class="toc-number">1.0.1.</span> <span class="toc-text">关于选题：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B7%A5%E4%BD%9C%E5%86%85%E5%AE%B9%EF%BC%9A"><span class="toc-number">1.0.2.</span> <span class="toc-text">工作内容：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E5%87%86%E5%A4%87%E7%8E%AF%E5%A2%83%EF%BC%9A"><span class="toc-number">1.0.2.1.</span> <span class="toc-text">1.准备环境：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%8E%E6%95%B0%E6%8D%AE%E9%9B%86%EF%BC%9A"><span class="toc-number">1.0.3.</span> <span class="toc-text">2.数据库与数据集：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%90%AF%E5%8A%A8%E9%A1%B9%E7%9B%AE%E4%B8%8E%E6%B5%8B%E8%AF%95%EF%BC%9A"><span class="toc-number">1.0.4.</span> <span class="toc-text">3.启动项目与测试：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A1%B9%E7%9B%AE%E5%8E%9F%E6%96%87%EF%BC%9A"><span class="toc-number">1.0.5.</span> <span class="toc-text">项目原文：</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/02/10/23-2-10/" title="校企实训项目：电影推荐系统 日记#1"><img src="https://s2.loli.net/2023/02/11/iS2XYUKTNAkERzL.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="校企实训项目：电影推荐系统 日记#1"/></a><div class="content"><a class="title" href="/2023/02/10/23-2-10/" title="校企实训项目：电影推荐系统 日记#1">校企实训项目：电影推荐系统 日记#1</a><time datetime="2023-02-10T15:28:47.000Z" title="发表于 2023-02-10 23:28:47">2023-02-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/09/06/22-9-6/" title="错题与知识点记录#2:求序列和"><img src="https://s2.loli.net/2022/09/01/EGDF4ywUoLS7I5a.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="错题与知识点记录#2:求序列和"/></a><div class="content"><a class="title" href="/2022/09/06/22-9-6/" title="错题与知识点记录#2:求序列和">错题与知识点记录#2:求序列和</a><time datetime="2022-09-06T10:48:33.000Z" title="发表于 2022-09-06 18:48:33">2022-09-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/09/01/22-9-1/" title="错题与知识点记录#1"><img src="https://s2.loli.net/2022/09/01/JVFkZtMAa4c6nYE.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="错题与知识点记录#1"/></a><div class="content"><a class="title" href="/2022/09/01/22-9-1/" title="错题与知识点记录#1">错题与知识点记录#1</a><time datetime="2022-09-01T08:31:39.000Z" title="发表于 2022-09-01 16:31:39">2022-09-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/07/21/21-7-21/" title="出港"><img src="https://s2.loli.net/2022/09/01/JVFkZtMAa4c6nYE.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="出港"/></a><div class="content"><a class="title" href="/2021/07/21/21-7-21/" title="出港">出港</a><time datetime="2021-07-20T17:56:22.000Z" title="发表于 2021-07-21 01:56:22">2021-07-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/04/22/%E9%87%8D%E6%8B%BEHEXO/" title="重拾HEXO"><img src="https://s2.loli.net/2022/09/01/EGDF4ywUoLS7I5a.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="重拾HEXO"/></a><div class="content"><a class="title" href="/2021/04/22/%E9%87%8D%E6%8B%BEHEXO/" title="重拾HEXO">重拾HEXO</a><time datetime="2021-04-22T03:30:36.000Z" title="发表于 2021-04-22 11:30:36">2021-04-22</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By クリムゾンSCARLET</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
